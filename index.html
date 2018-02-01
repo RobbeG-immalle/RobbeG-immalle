@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>reveal-md</title>
         <link rel="stylesheet" href="./css/reveal.css">
-        <link rel="stylesheet" href="./css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="./css/theme/solarized.css" id="theme">
         <link rel="stylesheet" href="./css/highlight/zenburn.css">
         <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
 
@@ -12,7 +12,7 @@
     <body>
 
         <div class="reveal">
-            <div class="slides"><section  data-markdown><script type="text/template"># Wat zijn optionele parameters? 
+            <div class="slides"><section  data-markdown><script type="text/template">### Wat zijn optionele parameters? 
 zie hoofdstuk 5.10
 Voorbeeld:
 
@@ -28,10 +28,10 @@ class Program {
     Groet("Robbe");
   }
 }
-```</script></section><section  data-markdown><script type="text/template"># Uitleg:
+```</script></section><section  data-markdown><script type="text/template">### Uitleg:
 De parameter naam wordt al ingesteld op een standaard variabele bij de method aanmaking, waardoor je bij de aanroep van de method het optioneel is om de parameter een waarde te geven.
 </script></section><section  data-markdown><script type="text/template">
-# Wat is parameter-binding? 
+### Wat is parameter-binding? 
 zie hoofdstuk 5.20
 Voorbeeld:
 ```
@@ -49,20 +49,20 @@ static void Main(string[] args)
     Swap(ref c, ref d);
 }
 ```
-</script></section><section  data-markdown><script type="text/template"># Uitleg: 
+</script></section><section  data-markdown><script type="text/template">### Uitleg: 
 Parameter binding houdt in dat je gebruik maakt van eenzelfde variabele waarnaar je meerdere keren kan refereren, zowel in de method als in de aanroep ervan.
 </script></section><section  data-markdown><script type="text/template">
-# Wat is method-overloading?
+### Wat is method-overloading?
 zie hoofdstuk 5.22
 Voorbeeld:
 ```
 Console.WriteLine(char value);
 Console.WriteLine(bool value);
 Console.WriteLine(string value);
-```</script></section><section  data-markdown><script type="text/template"># Uitleg:
+```</script></section><section  data-markdown><script type="text/template">### Uitleg:
 Console.WriteLine(); heeft in dit voorbeeld 19 overloads, elk van deze van deze overloads bevat een andere waarde.
 </script></section><section  data-markdown><script type="text/template">
-# Hoe herken je in WPF event-handlers? 
+### Hoe herken je in WPF event-handlers? 
 zie ook hoofdstuk 5.10
 Voorbeeld:
 ```
@@ -83,10 +83,10 @@ jaren.AddYears(1);
 
 //variabele verandert:
 jaren = jaren.AddYears(1);
-```</script></section><section  data-markdown><script type="text/template"># Uitleg:
+```</script></section><section  data-markdown><script type="text/template">### Uitleg:
 Als je de "AddYears()"-method niet gelijkstelt aan de DateTime waarbij je jaren toevoegt dan wordt de variabele niet aangepast.
 </script></section><section  data-markdown><script type="text/template">
-# Als je een variabele niet initialiseert welke waarde heeft hij dan?
+### Als je een variabele niet initialiseert welke waarde heeft hij dan?
 Wees volledig!
 
 Voorbeelden:
@@ -100,7 +100,7 @@ output: null
 DateTime datum = new DateTime();
 ds
 output: [1/01/0001 0:00:00]
-```</script></section><section  data-markdown><script type="text/template"># Uitleg:
+```</script></section><section  data-markdown><script type="text/template">### Uitleg:
 Dit hang af van de variabele, een string heeft als returnwaarde bijvoorbeeld 'null' en een int '0'.</script></section></div>
         </div>
 
